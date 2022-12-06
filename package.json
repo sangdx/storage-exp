@@ -1,10 +1,19 @@
 {
-  "name": "@storage-exp/storage-exp",
-  "version": "1.0.0",
+  "name": "storage-exp-time",
+  "version": "1.0.2",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "repository": "https://github.com/sangdx/storage-exp",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "npm run build",
+    "build": "tsc"
   },
   "author": "Brand",
   "license": "ISC"
